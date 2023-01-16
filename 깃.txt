@@ -1,0 +1,47 @@
+REST API
+- HTTPS 프로토콜로
+  JSON을 주고받는 "원칙"
+
+HTTP 요청 메서드
+- GET -> READ
+  POST -> CREATE
+  PUT -> UPDATE(수정 대상이 전체)
+  PATCH -> UPDATE
+  DELETE -> DELETE
+
+* CRUD - CREATE, READ, UPDATE, DELETE
+
+ex) GET /movies
+     GET /movies/1534
+     POST /movies
+                   {"movieName": "슬램덩크", "releaseDate": "2022-12-25"}
+     PATCH /movies/1534
+                   {"movieName": "아바타", "releaseDate": "2022-12-25"}
+     DELETE /movies/1534 
+
+git : 컴퓨터에 설치하는 프로그램 -> 누가 특정 코드를 언제 어떻게 왜 수정했는지 알 수 있다.
+github : git 커뮤니티
+add = 커밋할 내용 담기
+commit = 얼리는거
+push = git에 올림
+
+명령어
+git add -A
+git commit -m "230113"
+git push -u origin master
+git clone 레포지토리 주소 => 컴퓨터에 레포지토리 생성
+
+컴퓨터에 깃 전역설정
+1. git init
+2. git config --global user.name "내 이름"
+3. git config --global user.email "내 이메일"
+깃 업로드
+1. git add -A
+2. git commit -m "커밋내용"
+3. git remote add origin 레포지토리 주소
+4. git remote시 origin뜨면 정상
+5. git push -u origin master
+깃 수정
+1. git add -A
+2. git commit -m "수정 내용"
+3. git push -u origin master
